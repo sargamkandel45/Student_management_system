@@ -1,0 +1,328 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    outline: none;
+    list-style: none;
+}
+body{
+    overflow: hidden;
+     background: rgb(235,235,235);
+background: linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(90,153,89,0.8242647400757178) 100%); 
+}
+
+.text-center{
+    border-right: 4px solid rgb(191, 187, 187);
+    text-align: center;
+    padding: 10px;
+    border-bottom: 4px solid silver;
+}
+.container{
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+.section-post{
+    height: 91vh;
+    width: 60%;
+}
+.post-section{
+    padding: 10px;
+    width: 97%;
+    height: 81.90vh;
+    overflow-y: scroll;
+    scrollbar-width: 10px;
+    scrollbar-color: black;
+    box-shadow: 1px 2px 3px rgb(255, 255, 255);
+}
+
+.post-section::-webkit-scrollbar{
+    display: none;
+    
+}
+.post{
+    background: white; 
+    border-radius: 3px;
+    margin-top: 10px;
+    box-shadow: 3px 5px 10px rgb(41, 41, 41);
+}
+.post .head-post{
+    border-bottom: 2px solid silver;
+    padding: 10px;
+}
+.post .head-post img{
+    height: 60px;
+    border-radius: 50%;
+}
+.name{
+    position: relative;
+    top: -20px;
+}
+.date{
+    float: right;
+    line-height: 55px;
+}
+.post .body{
+    padding: 10px;
+}
+.post .photo img{
+    width: 100%;
+    border-radius: 4px;
+}
+.commentbox{
+    border-top: 2px solid silver;
+    width: 97.65%;
+    padding: 10px;
+}
+.commentbox input{
+    padding: 0 10px;
+    width: 74%;
+    height: 40px;
+}
+.commentbox button{
+    height: 40px;
+    background-color: rgb(12, 126, 255);
+    padding: 0 10px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.user-welcome{
+    text-align: center;
+    line-height: 58px;
+    font-family: cursive;
+    left: 42%;
+    position: absolute;
+    font-size: 22px;
+}
+
+nav{
+    height: 65px;
+    background: rgb(22,6,129);
+background: linear-gradient(90deg, rgba(22,6,129,1) 50%, rgba(7,87,255,0.45451684091605393) 100%);
+    color: white;
+}
+nav .h3{
+    position: absolute;
+    line-height: 50px;
+    padding: 5px 0 0 15px;
+    font-size: 22px;
+}
+nav ul{
+    float: right;
+    display: flex;
+}
+
+nav ul li{
+    font-size: 19px;
+    line-height: 60px;
+    margin-right: 40px;
+}
+.caption .text{
+    padding: 10px 0;
+}
+
+
+.section-class, .section-teacher{
+    width: 33.33%;
+    height: 90vh;
+}
+ .section-class{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.section-class .all-classes a{
+    position: relative;
+    top: 20px;
+    color: white;
+    padding: 10px 35px;
+    background-color: rgb(12, 109, 255);
+    border-radius: 4px;
+}
+.section-class h2{
+    margin: -3.8px 0 0 0;
+}
+.class-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.recent-class{
+    margin-top: 50px;
+}
+.recent-class h3{
+    padding: 20px;
+    border-bottom: 6px solid silver;
+}
+.class{
+    justify-content: space-between;
+    width: 90%;
+    box-shadow: 3px 4px 9px rgb(72, 72, 72);
+    padding: 8px 20px;
+    display: flex;
+    margin: 20px 0 0 0;
+}
+.class p{
+    font-size: 18px;
+}
+.class a{
+    background-color: black;
+    color: white;
+    border-radius: 3px ;
+    padding: 4px 8px;
+}
+.add-new-post{
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    font-size: 20px;
+    border-radius: 9px;
+    padding: 10px 15px;
+    box-shadow: 4px 6px 12px rgb(61, 61, 61);
+}
+.add-new-post a{
+    color: black;
+}
+.add-new-post span{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 7px rgb(48, 48, 48) inset;
+    padding: 0 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: rgb(44, 111, 255);
+}
+.add-new-post span:hover{
+    box-shadow: 4px 4px 7px rgb(48, 48, 48);
+}
+.user{
+    padding: 0 20px;
+    display: flex;
+}
+.user img{
+    padding: 5px 0;
+   height: 50px;
+   border-radius: 50%;
+}
+.user .user-name{
+    padding: 0 10px;
+    line-height: 55px;
+}
+.post-adding{
+    display: none;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 3px 8px 20px rgb(22, 138, 255);
+}
+.post-adding h3{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+.inputs{
+    margin: 10px 0 0 0;
+}
+.input{
+    margin-top: 10px;
+}
+.inputs input{
+    width: 100%;
+    height: 40px;
+}
+.inputs input, textarea{
+    border-radius: 3px;
+    padding: 0 3px;
+}
+.input textarea{
+    width: 100%;
+    height: 80px;
+}
+.post-adding button{
+    width: 100%;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgb(0, 119, 255);
+    border: none;
+    cursor: pointer;
+    border-top: 2px solid silver;
+    padding-top: 10px;
+}
+.post-adding a{
+    float: right;
+    cursor: pointer;
+    margin-top: -10px;
+}
+.fa-power-off{
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.id{
+    display: flex;
+}
+.id img{
+    height: 40px;
+    border-radius: 50%;
+}
+.section-teacher h2{
+    margin-top: -3.9px;
+}
+.head-teacher h3{
+    margin: 10px 0 0 0;
+    text-align: center;
+    border: 2px solid silver;
+    width: 100%;
+}
+.id{
+    margin: 10px 0 0;
+    width: 90%;
+    box-shadow: 4px 5px 10px rgb(75, 75, 75);
+    padding: 6px 12px;
+    border-bottom: 2px solid black;
+}
+.id .teacher-name{
+    line-height: 30px;
+    padding: 8px;
+}
+.all{
+    overflow-y: scroll;
+}
+.all::-webkit-scrollbar{
+    display: none;
+}
+.more-btn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.more-btn .btn{
+    margin-bottom: 10px;
+    box-shadow: 4px 5px 12px rgb(22, 107, 255);
+    padding: 10px 15px;
+}
+.more-btn .btn a{
+    text-align: center;
+    margin-left: 90px;
+    font-size: 20px;
+}
+.logout img{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+#post_title{
+    font-family: cursive;
+    font-size: 19px;
+}
+.admin-page{
+} */
